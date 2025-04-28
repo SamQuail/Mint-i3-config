@@ -1,0 +1,1 @@
+# Mint-i3-config
