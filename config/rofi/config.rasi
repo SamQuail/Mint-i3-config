@@ -1,0 +1,9 @@
+configuration {
+  // Your existing configuration options
+  display-run: "Apps: ";
+  modi: "drun,run";
+  show-icons: true;
+  font: "Fira Code 12";
+}
+
+@theme "~/.config/rofi/themes/nord.rasi"
