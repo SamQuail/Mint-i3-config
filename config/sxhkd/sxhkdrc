@@ -1,0 +1,19 @@
+# Next track
+XF86AudioNext
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+
+# previous track
+XF86AudioPrev
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+
+# Volume Up
+XF86AudioRaiseVolume
+    amixer set Master 5%+ unmute
+
+# Volume Down
+XF86AudioLowerVolume
+    amixer set Master 5%- unmute
+
+# Mute
+XF86AudioMute
+    amixer set Master toggle

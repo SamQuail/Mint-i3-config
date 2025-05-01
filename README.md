@@ -2,7 +2,7 @@
 
 ## Install 
 ```bash
-sudo apt install  i3-wm i3lock i3status polybar feh rofi scrot python3 python3-pip vim
+sudo apt install  i3-wm i3lock i3status polybar feh rofi scrot python3 python3-pip vim picom sxhkd
 ```
 ```bash
 sudo snap install alacritty --classic
@@ -35,7 +35,7 @@ mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
 ```
 
-in `./config/alacritty/alacritty.yml` add the following:
+in `./config/alacritty/alacritty.yml` add the following, though if you copy the config file it will already be there:
 ```bash
 shell:
   program: /usr/bin/zsh

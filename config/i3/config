@@ -175,9 +175,14 @@ bindsym $mod+Shift+s exec --no-startup-id "shutdown now"
 # add screenshot button
 bindsym Print exec scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/screenshots/'
 
+# enable picom
+exec --no-startup-id picom -CGb
 
+# Shortcut for Lockscreen
+bindsym $mod+x exec $HOME/.config/scripts/lock
 
-
+# macros for audio binds
+exec_always  sxhkd &
 
 
 # reload the configuration file
@@ -213,4 +218,3 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
