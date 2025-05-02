@@ -11,7 +11,7 @@ sudo snap install alacritty --classic
 On arch there is no default login already installed by the OS, so you need to install something like lightdm
 
 ```bash
-sudo apt install lightdm lightdm-gtk-greeter
+sudo pacman -S lightdm lightdm-gtk-greeter
 ```
 To enable the lightdm service
 
